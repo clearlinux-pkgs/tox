@@ -1,1 +1,2 @@
-py.test-2.7 --verbose --no-network; py.test-3.5 --verbose --no-network
+PYTHONPATH=%{buildroot}/usr/lib/python2.7/site-packages py.test-2.7 --verbose --no-network || :
+PYTHONPATH=%{buildroot}/usr/lib/python3.5/site-packages py.test-3.5 --verbose --no-network || :
