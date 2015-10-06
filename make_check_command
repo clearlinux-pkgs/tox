@@ -1,1 +1,1 @@
-py.test-2.7 --verbose --no-network; py.test-3.4 --verbose --no-network
+py.test-2.7 --verbose --no-network; py.test-3.5 --verbose --no-network

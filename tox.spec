@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 2.1.1
-Release  : 22
+Release  : 23
 URL      : https://pypi.python.org/packages/source/t/tox/tox-2.1.1.tar.gz
 Source0  : https://pypi.python.org/packages/source/t/tox/tox-2.1.1.tar.gz
 Summary  : virtualenv-based automation of test activities
@@ -57,7 +57,7 @@ python3 setup.py build -b py3
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
-py.test-2.7 --verbose --no-network; py.test-3.4 --verbose --no-network
+py.test-2.7 --verbose --no-network; py.test-3.5 --verbose --no-network
 %install
 rm -rf %{buildroot}
 python2 setup.py build -b py2 install --root=%{buildroot}
