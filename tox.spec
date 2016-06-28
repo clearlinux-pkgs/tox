@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 2.3.1
-Release  : 28
+Release  : 29
 URL      : https://pypi.python.org/packages/source/t/tox/tox-2.3.1.tar.gz
 Source0  : https://pypi.python.org/packages/source/t/tox/tox-2.3.1.tar.gz
 Summary  : virtualenv-based automation of test activities
