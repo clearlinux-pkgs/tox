@@ -1,5 +1,5 @@
 PKG_NAME := tox
-URL := https://pypi.python.org/packages/source/t/tox/tox-2.3.1.tar.gz
+URL := http://pypi.debian.net/tox/tox-2.4.1.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common
