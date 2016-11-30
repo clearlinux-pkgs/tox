@@ -1,3 +1,46 @@
+2.5.0
+----------
+
+- slightly backward incompatible: fix issue310: the {posargs} substitution 
+  now properly preserves the tox command line positional arguments. Positional 
+  arguments with spaces are now properly handled.
+  NOTE: if your tox invocation previously used extra quoting for positional arguments to
+  work around issue310, you need to remove the quoting. Example:
+  tox -- "'some string'"  # has to now be written simply as 
+  tox -- "some string"
+  thanks holger krekel.  You can set ``minversion = 2.5.0`` in the ``[tox]`` 
+  section of ``tox.ini`` to make sure people using your tox.ini use the correct version.
+
+- fix #359: add COMSPEC to default passenv on windows.  Thanks
+  @anthrotype.
+
+- add support for py36 and py37 and add py36-dev and py37(nightly) to
+  travis builds of tox. Thanks John Vandenberg.
+
+- fix #348: add py2 and py3 as default environments pointing to
+  "python2" and "python3" basepython executables.  Also fix #347 by 
+  updating the list of default envs in the tox basic example.
+  Thanks Tobias McNulty.
+
+- make "-h" and "--help-ini" options work even if there is no tox.ini,
+  thanks holger krekel.
+
+- add {:} substitution, which is replaced with os-specific path
+  separator, thanks Lukasz Rogalski.
+
+- fix #305: ``downloadcache`` test env config is now ignored as pip-8
+  does caching by default. Thanks holger krekel.
+
+- output from install command in verbose (-vv) mode is now printed to console instead of
+  being redirected to file, thanks Lukasz Rogalski
+
+- fix #399.  Make sure {envtmpdir} is created if it doesn't exist at the
+  start of a testenvironment run. Thanks Manuel Jacob.
+
+- fix #316: Lack of commands key in ini file is now treated as an error.
+  Reported virtualenv status is 'nothing to do' instead of 'commands
+  succeeded', with relevant error message displayed. Thanks Lukasz Rogalski.
+
 2.4.1
 -----
 
