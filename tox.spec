@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 2.5.0
-Release  : 33
+Release  : 34
 URL      : http://pypi.debian.net/tox/tox-2.5.0.tar.gz
 Source0  : http://pypi.debian.net/tox/tox-2.5.0.tar.gz
 Summary  : virtualenv-based automation of test activities
