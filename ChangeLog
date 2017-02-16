@@ -1,5 +1,27 @@
+2.6.0
+-----
+
+- add "alwayscopy" config option to instruct virtualenv to always copy
+  files instead of symlinking. Thanks Igor Duarte Cardoso (@igordcard).
+
+- pass setenv variables to setup.py during a usedevelop install.
+  Thanks Eli Collins (@eli-collins).
+
+- replace all references to testrun.org with readthedocs ones.
+  Thanks Oliver Bestwalter (@obestwalter).
+
+- fix #323 by avoiding virtualenv14 is not used on py32
+  (although we don't officially support py32).
+  Thanks Jason R. Coombs (@jaraco).
+
+- add Python 3.6 to envlist and CI.
+  Thanks Andrii Soldatenko (@andriisoldatenko).
+
+- fix glob resolution from TOX_TESTENV_PASSENV env variable
+  Thanks Allan Feldman (@a-feld).
+
 2.5.0
-----------
+-----
 
 - slightly backward incompatible: fix issue310: the {posargs} substitution 
   now properly preserves the tox command line positional arguments. Positional 
