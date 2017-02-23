@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 2.6.0
-Release  : 36
+Release  : 37
 URL      : http://pypi.debian.net/tox/tox-2.6.0.tar.gz
 Source0  : http://pypi.debian.net/tox/tox-2.6.0.tar.gz
 Summary  : virtualenv-based automation of test activities
@@ -12,6 +12,10 @@ Group    : Development/Tools
 License  : MIT
 Requires: tox-bin
 Requires: tox-python
+Requires: argparse
+Requires: pluggy
+Requires: py
+Requires: virtualenv
 BuildRequires : argparse
 BuildRequires : pbr
 BuildRequires : pip
@@ -60,12 +64,12 @@ python components for the tox package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1487210876
+export SOURCE_DATE_EPOCH=1487879838
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1487210876
+export SOURCE_DATE_EPOCH=1487879838
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
