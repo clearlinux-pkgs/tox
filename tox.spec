@@ -4,13 +4,14 @@
 #
 Name     : tox
 Version  : 2.7.0
-Release  : 39
+Release  : 41
 URL      : https://pypi.debian.net/tox/tox-2.7.0.tar.gz
 Source0  : https://pypi.debian.net/tox/tox-2.7.0.tar.gz
 Summary  : virtualenv-based automation of test activities
 Group    : Development/Tools
 License  : MIT
 Requires: tox-bin
+Requires: tox-python2
 Requires: tox-python
 Requires: argparse
 Requires: pluggy
@@ -32,15 +33,7 @@ Patch1: 0001-remove-deps-to-run-tests.patch
 
 %description
 What is Tox?
---------------------
-.. image:: https://img.shields.io/pypi/v/tox.svg
-:target: https://pypi.org/project/tox/
-.. image:: https://img.shields.io/pypi/pyversions/tox.svg
-:target: https://pypi.org/project/tox/
-.. image:: https://travis-ci.org/tox-dev/tox.svg?branch=master
-:target: https://travis-ci.org/tox-dev/tox
-.. image:: https://img.shields.io/appveyor/ci/RonnyPfannschmidt/tox/master.svg
-:target: https://ci.appveyor.com/project/RonnyPfannschmidt/tox
+        --------------------
 
 %package bin
 Summary: bin components for the tox package.
@@ -58,18 +51,30 @@ Group: Default
 python components for the tox package.
 
 
+%package python2
+Summary: python2 components for the tox package.
+Group: Default
+Requires: tox-python
+
+%description python2
+python2 components for the tox package.
+
+
 %prep
 %setup -q -n tox-2.7.0
 %patch1 -p1
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1492372616
+export SOURCE_DATE_EPOCH=1504455930
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1492372616
+export SOURCE_DATE_EPOCH=1504455930
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -87,5 +92,8 @@ echo ----[ mark ]----
 
 %files python
 %defattr(-,root,root,-)
-/usr/lib/python2*/*
 /usr/lib/python3*/*
+
+%files python2
+%defattr(-,root,root,-)
+/usr/lib/python2*/*
