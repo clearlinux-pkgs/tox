@@ -4,14 +4,14 @@
 #
 Name     : tox
 Version  : 2.7.0
-Release  : 41
+Release  : 43
 URL      : https://pypi.debian.net/tox/tox-2.7.0.tar.gz
 Source0  : https://pypi.debian.net/tox/tox-2.7.0.tar.gz
 Summary  : virtualenv-based automation of test activities
 Group    : Development/Tools
 License  : MIT
 Requires: tox-bin
-Requires: tox-python2
+Requires: tox-legacypython
 Requires: tox-python
 Requires: argparse
 Requires: pluggy
@@ -43,21 +43,21 @@ Group: Binaries
 bin components for the tox package.
 
 
+%package legacypython
+Summary: legacypython components for the tox package.
+Group: Default
+
+%description legacypython
+legacypython components for the tox package.
+
+
 %package python
 Summary: python components for the tox package.
 Group: Default
+Requires: tox-legacypython
 
 %description python
 python components for the tox package.
-
-
-%package python2
-Summary: python2 components for the tox package.
-Group: Default
-Requires: tox-python
-
-%description python2
-python2 components for the tox package.
 
 
 %prep
@@ -69,12 +69,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1504455930
+export SOURCE_DATE_EPOCH=1504456141
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1504455930
+export SOURCE_DATE_EPOCH=1504456141
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -90,10 +90,10 @@ echo ----[ mark ]----
 /usr/bin/tox
 /usr/bin/tox-quickstart
 
+%files legacypython
+%defattr(-,root,root,-)
+/usr/lib/python2*/*
+
 %files python
 %defattr(-,root,root,-)
 /usr/lib/python3*/*
-
-%files python2
-%defattr(-,root,root,-)
-/usr/lib/python2*/*
