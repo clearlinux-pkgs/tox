@@ -1,26 +1,13 @@
-From c4f2e48747870a8ddb3c1f9ef19dd4c2ee94c15e Mon Sep 17 00:00:00 2001
-From: "Simental Magana, Marcos" <marcos.simental.magana@intel.com>
-Date: Tue, 23 Jun 2015 11:58:28 -0500
-Subject: [PATCH] remove deps to run tests
-
----
- tox.ini | 3 +--
- 1 file changed, 1 insertion(+), 2 deletions(-)
-
-diff --git a/tox.ini b/tox.ini
-index d78bcbd..6e7dcf3 100644
---- a/tox.ini
-+++ b/tox.ini
-@@ -7,8 +7,7 @@ commands=echo {posargs}
+--- tox-2.8.1/tox.ini~	2017-09-04 09:44:59.000000000 +0000
++++ tox-2.8.1/tox.ini	2017-09-06 18:16:15.619473316 +0000
+@@ -9,8 +9,8 @@
  [testenv]
- commands= py.test --timeout=180 {posargs}
- 
--deps=pytest>=2.3.5
--    pytest-timeout
-+deps=
+ commands = pytest --timeout=180 {posargs:tests}
+ description = run the unit tests with pytest under the current Python env
+-deps = pytest >= 3.0.0
+-       pytest-timeout
++deps = 
++       
  
  [testenv:py26-bare]
  deps =
--- 
-1.9.3
-
