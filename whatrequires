@@ -1,6 +1,5 @@
 # This file contains recursive sources that require this package
 Babel
-CNTK
 Cheetah
 ConfigArgParse
 Cython
@@ -12,6 +11,7 @@ LVM2
 Mako
 Markdown
 MarkupSafe
+ModemManager
 MySQL-python
 NetworkManager
 OpenSP
@@ -56,6 +56,7 @@ at-spi2-atk
 at-spi2-core
 atk
 atomicwrites
+attrs
 audit
 autofs
 awscli
@@ -139,6 +140,7 @@ fontsproto
 fs
 funcsigs
 functools32
+fuse
 futures
 garcon
 gcr
@@ -154,6 +156,7 @@ git
 glib
 gmime
 gnome-autoar
+gnome-backgrounds
 gnome-bluetooth
 gnome-calendar
 gnome-desktop
@@ -247,6 +250,7 @@ libgnome-keyring
 libgsystem
 libgtop
 libgudev
+libgusb
 libgweather
 libidn
 libjpeg-turbo
@@ -387,6 +391,7 @@ python-mock
 python-multilib
 python-pkgconfig
 python-subunit
+python-systemd
 python-tappy
 python-toml
 python-urwid
@@ -429,6 +434,7 @@ spice
 spice-gtk
 spice-protocol
 sqlparse
+sshfs
 subunit
 sure
 swig
