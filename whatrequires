@@ -116,6 +116,7 @@ dconf
 deap
 decorator
 diffoscope
+dnf
 dnspython
 docker
 docker-py
@@ -153,6 +154,7 @@ geocode-glib
 gevent
 gimp
 git
+glances
 glib
 gmime
 gnome-autoar
@@ -161,6 +163,7 @@ gnome-bluetooth
 gnome-calendar
 gnome-desktop
 gnome-doc-utils
+gnome-font-viewer
 gnome-online-accounts
 gnome-panel
 gnome-session
@@ -216,6 +219,7 @@ jedi
 jedi-vim
 jmespath
 json-glib
+jsoncpp
 jsonschema
 jupyter
 jupyter-nbgallery
@@ -335,6 +339,7 @@ pandas
 pandocfilters
 pango
 paramiko
+parso
 passlib
 patchutils
 pbr
@@ -451,7 +456,6 @@ testresources
 testscenarios
 testtools
 tflearn
-tig
 tigervnc
 tornado
 totem
@@ -496,3 +500,4 @@ xproto
 xtrans
 yasm
 yum-metadata-parser
+zstd

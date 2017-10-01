@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 2.8.2
-Release  : 48
+Release  : 49
 URL      : https://pypi.debian.net/tox/tox-2.8.2.tar.gz
 Source0  : https://pypi.debian.net/tox/tox-2.8.2.tar.gz
 Summary  : virtualenv-based automation of test activities
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : MIT
 Requires: tox-bin
 Requires: tox-legacypython
+Requires: tox-python3
 Requires: tox-python
 Requires: argparse
 Requires: pluggy
@@ -56,9 +57,18 @@ legacypython components for the tox package.
 Summary: python components for the tox package.
 Group: Default
 Requires: tox-legacypython
+Requires: tox-python3
 
 %description python
 python components for the tox package.
+
+
+%package python3
+Summary: python3 components for the tox package.
+Group: Default
+
+%description python3
+python3 components for the tox package.
 
 
 %prep
@@ -70,12 +80,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1505696714
+export SOURCE_DATE_EPOCH=1506867896
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1505696714
+export SOURCE_DATE_EPOCH=1506867896
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -96,5 +106,8 @@ echo ----[ mark ]----
 /usr/lib/python2*/*
 
 %files python
+%defattr(-,root,root,-)
+
+%files python3
 %defattr(-,root,root,-)
 /usr/lib/python3*/*
