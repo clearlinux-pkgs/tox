@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 2.8.2
-Release  : 49
+Release  : 50
 URL      : https://pypi.debian.net/tox/tox-2.8.2.tar.gz
 Source0  : https://pypi.debian.net/tox/tox-2.8.2.tar.gz
 Summary  : virtualenv-based automation of test activities
@@ -48,6 +48,7 @@ bin components for the tox package.
 %package legacypython
 Summary: legacypython components for the tox package.
 Group: Default
+Requires: python-core
 
 %description legacypython
 legacypython components for the tox package.
@@ -66,6 +67,7 @@ python components for the tox package.
 %package python3
 Summary: python3 components for the tox package.
 Group: Default
+Requires: python3-core
 
 %description python3
 python3 components for the tox package.
@@ -80,12 +82,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1506867896
+export SOURCE_DATE_EPOCH=1507180043
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1506867896
+export SOURCE_DATE_EPOCH=1507180043
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
