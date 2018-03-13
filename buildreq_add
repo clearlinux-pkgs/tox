@@ -5,3 +5,4 @@ virtualenv
 pytest
 pytest-timeout
 tox
+setuptools-legacypython
