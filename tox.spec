@@ -4,14 +4,13 @@
 #
 Name     : tox
 Version  : 3.0.0
-Release  : 55
+Release  : 56
 URL      : https://pypi.debian.net/tox/tox-3.0.0.tar.gz
 Source0  : https://pypi.debian.net/tox/tox-3.0.0.tar.gz
 Summary  : virtualenv-based automation of test activities
 Group    : Development/Tools
 License  : MIT
 Requires: tox-bin
-Requires: tox-legacypython
 Requires: tox-python3
 Requires: tox-python
 Requires: Sphinx
@@ -62,15 +61,6 @@ Group: Binaries
 bin components for the tox package.
 
 
-%package legacypython
-Summary: legacypython components for the tox package.
-Group: Default
-Requires: python-core
-
-%description legacypython
-legacypython components for the tox package.
-
-
 %package python
 Summary: python components for the tox package.
 Group: Default
@@ -97,15 +87,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1522701417
-python2 setup.py build -b py2
+export SOURCE_DATE_EPOCH=1523309596
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1522701417
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -117,10 +104,6 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 /usr/bin/tox
 /usr/bin/tox-quickstart
-
-%files legacypython
-%defattr(-,root,root,-)
-/usr/lib/python2*/*
 
 %files python
 %defattr(-,root,root,-)
