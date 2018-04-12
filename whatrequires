@@ -145,6 +145,7 @@ colord
 colord-gtk
 comedilib
 compat-gegl
+compat-gtksourceview-soname3
 compat-libwebp-soname6
 compat-llvm-soname4
 compat-llvm-soname5
@@ -180,6 +181,7 @@ dnf-plugins-core
 dnspython
 docker
 docker-py
+dockerpy-creds
 docutils
 dogtail
 double-conversion
@@ -371,6 +373,7 @@ libcanberra
 libchamplain
 libcroco
 libcryptui
+libdazzle
 libdnf
 libdrm
 libepoxy
@@ -679,6 +682,7 @@ urlgrabber
 urllib3
 util-linux
 uwsgi
+vala
 vcversioner
 vinagre
 virt-manager

@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 3.0.0
-Release  : 56
+Release  : 57
 URL      : https://pypi.debian.net/tox/tox-3.0.0.tar.gz
 Source0  : https://pypi.debian.net/tox/tox-3.0.0.tar.gz
 Summary  : virtualenv-based automation of test activities
@@ -32,7 +32,6 @@ BuildRequires : pytest-timeout
 BuildRequires : python-dev
 BuildRequires : python3-dev
 BuildRequires : setuptools
-BuildRequires : setuptools-legacypython
 BuildRequires : setuptools_scm
 BuildRequires : six
 BuildRequires : tox
@@ -87,7 +86,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523309596
+export SOURCE_DATE_EPOCH=1523557148
 python3 setup.py build -b py3
 
 %install
