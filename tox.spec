@@ -29,7 +29,7 @@ BuildRequires : pluggy
 BuildRequires : py
 BuildRequires : pytest
 BuildRequires : pytest-timeout
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : setuptools
 BuildRequires : setuptools_scm
