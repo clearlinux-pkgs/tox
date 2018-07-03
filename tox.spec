@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 3.0.0
-Release  : 63
+Release  : 64
 URL      : https://pypi.debian.net/tox/tox-3.0.0.tar.gz
 Source0  : https://pypi.debian.net/tox/tox-3.0.0.tar.gz
 Summary  : virtualenv-based automation of test activities
