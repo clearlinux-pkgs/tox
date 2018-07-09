@@ -256,6 +256,7 @@ colord
 colord-gtk
 comedilib
 compat-gtksourceview-soname3
+compat-hyperscan-soname4
 compat-llvm-soname4
 compat-opencv-soname32
 compat-opencv-soname33
