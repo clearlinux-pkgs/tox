@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 3.4.0
-Release  : 71
+Release  : 72
 URL      : https://files.pythonhosted.org/packages/45/a6/c35e27a2c81b17b3af3043161671eaff3a0449937d534a6e1baaa3756bdb/tox-3.4.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/45/a6/c35e27a2c81b17b3af3043161671eaff3a0449937d534a6e1baaa3756bdb/tox-3.4.0.tar.gz
 Summary  : virtualenv-based automation of test activities
@@ -17,10 +17,7 @@ Requires: tox-python
 Requires: Sphinx
 Requires: pluggy
 Requires: py
-Requires: pytest
-Requires: pytest-cov
-Requires: pytest-timeout
-Requires: pytest-xdist
+Requires: python-toml
 Requires: setuptools
 Requires: six
 Requires: virtualenv
@@ -102,7 +99,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1538184199
+export SOURCE_DATE_EPOCH=1538839693
 python3 setup.py build
 
 %install

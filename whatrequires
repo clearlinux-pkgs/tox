@@ -30,6 +30,7 @@ cachetools
 ceph
 ceph-deploy
 certbot
+check-manifest
 cheroot
 click
 cloudpickle
@@ -67,6 +68,7 @@ khal
 lazy-object-proxy
 libarchive-c
 matplotlib
+mido
 mod_wsgi
 more-itertools
 mypy
@@ -95,6 +97,7 @@ python-hwinfo
 python-perf
 python-swiftclient
 python-tappy
+python-toml
 python-troveclient
 python-zeep
 pyudev
