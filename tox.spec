@@ -4,17 +4,16 @@
 #
 Name     : tox
 Version  : 3.4.0
-Release  : 72
+Release  : 73
 URL      : https://files.pythonhosted.org/packages/45/a6/c35e27a2c81b17b3af3043161671eaff3a0449937d534a6e1baaa3756bdb/tox-3.4.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/45/a6/c35e27a2c81b17b3af3043161671eaff3a0449937d534a6e1baaa3756bdb/tox-3.4.0.tar.gz
 Summary  : virtualenv-based automation of test activities
 Group    : Development/Tools
 License  : MIT
-Requires: tox-bin
-Requires: tox-python3
-Requires: tox-license
-Requires: tox-python
-Requires: Sphinx
+Requires: tox-bin = %{version}-%{release}
+Requires: tox-license = %{version}-%{release}
+Requires: tox-python = %{version}-%{release}
+Requires: tox-python3 = %{version}-%{release}
 Requires: pluggy
 Requires: py
 Requires: python-toml
@@ -99,13 +98,13 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1538839693
+export SOURCE_DATE_EPOCH=1541280460
 python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/tox
-cp LICENSE %{buildroot}/usr/share/doc/tox/LICENSE
+mkdir -p %{buildroot}/usr/share/package-licenses/tox
+cp LICENSE %{buildroot}/usr/share/package-licenses/tox/LICENSE
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -121,7 +120,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/doc/tox/LICENSE
+/usr/share/package-licenses/tox/LICENSE
 
 %files python
 %defattr(-,root,root,-)
