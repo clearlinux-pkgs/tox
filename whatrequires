@@ -1,6 +1,7 @@
 # This file contains recursive sources that require this package
 CherryPy
 Flask
+MarkupSafe
 Paste
 PyJWT
 PyMySQL
@@ -95,6 +96,7 @@ pytest-runner
 pytest-sugar
 pytest-timeout
 pytest-xdist
+python-graphviz
 python-hwinfo
 python-perf
 python-swiftclient
@@ -112,9 +114,11 @@ repoze.lru
 repoze.who
 requests-toolbelt
 scikit-build
+seqdiag
 serpent
 sortedcontainers
 sphinx-feature-classification
+sphinxcontrib-programoutput
 sphinxcontrib-websupport
 stestr
 sure
