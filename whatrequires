@@ -80,6 +80,7 @@ neon
 nose-parameterized
 ntlm-auth
 os-xenapi
+oslo.upgradecheck
 packaging
 parso
 patsy
@@ -87,6 +88,7 @@ performance
 persistent
 portend
 pyOpenSSL
+pybtex
 pydot_ng
 pytest-cov
 pytest-forked
