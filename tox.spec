@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 3.6.1
-Release  : 79
+Release  : 80
 URL      : https://files.pythonhosted.org/packages/14/c4/ee073df7f649e2a1977781807c0bb1fcfc691a99ee7b4a7a3cc819841458/tox-3.6.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/14/c4/ee073df7f649e2a1977781807c0bb1fcfc691a99ee7b4a7a3cc819841458/tox-3.6.1.tar.gz
 Summary  : virtualenv-based automation of test activities
@@ -97,7 +97,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1545922165
+export SOURCE_DATE_EPOCH=1551039723
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
