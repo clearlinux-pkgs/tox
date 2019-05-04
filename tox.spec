@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 3.9.0
-Release  : 82
+Release  : 83
 URL      : https://files.pythonhosted.org/packages/c8/4c/f2c9d3d1eb94f8fab14bc3fa2e936d48a10ae8b43f5e5e7dffb1c5df984a/tox-3.9.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c8/4c/f2c9d3d1eb94f8fab14bc3fa2e936d48a10ae8b43f5e5e7dffb1c5df984a/tox-3.9.0.tar.gz
 Summary  : tox is a generic virtualenv management and test command line tool
@@ -17,15 +17,14 @@ Requires: tox-python3 = %{version}-%{release}
 Requires: filelock
 Requires: pluggy
 Requires: py
-Requires: python-toml
 Requires: setuptools
 Requires: six
+Requires: toml
 Requires: virtualenv
 BuildRequires : buildreq-distutils3
 BuildRequires : pluggy
 BuildRequires : pytest
 BuildRequires : pytest-timeout
-BuildRequires : python-toml
 BuildRequires : setuptools_scm
 BuildRequires : tox
 BuildRequires : virtualenv
@@ -87,7 +86,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1555944340
+export SOURCE_DATE_EPOCH=1556983286
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 

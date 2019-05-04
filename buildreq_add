@@ -6,4 +6,4 @@ pytest
 pytest-timeout
 tox
 setuptools_scm
-python-toml
+toml
