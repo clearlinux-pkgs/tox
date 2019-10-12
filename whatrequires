@@ -1,22 +1,23 @@
 # This file contains recursive sources that require this package
+Cheetah3
 CherryPy
 Flask
+Mako
 MarkupSafe
 Paste
 PyJWT
 PyMySQL
 PyNaCl
 PySocks
-Pyro4
 SQLAlchemy
 Sphinx
 WSGIProxy2
 WebOb
 WebTest
 Werkzeug
-aiohttp
 alembic
 ansible
+apache-libcloud
 apipkg
 argon2_cffi
 attrs
@@ -42,21 +43,6 @@ configparser
 cotyledon
 coverage
 defusedxml
-deprecated-MarkupSafe
-deprecated-Sphinx
-deprecated-WebOb
-deprecated-Werkzeug
-deprecated-attrs
-deprecated-boto3
-deprecated-configparser
-deprecated-coverage
-deprecated-glances
-deprecated-html5lib
-deprecated-mido
-deprecated-pyOpenSSL
-deprecated-sphinxcontrib-websupport
-deprecated-zope.testing
-deprecated-zope.testrunner
 distro
 django_compressor
 dnf
@@ -68,7 +54,6 @@ fastnumbers
 flake8-deprecated
 flake8-docstrings
 fonttools
-gabbi
 glance
 glances
 greenlet
@@ -78,6 +63,7 @@ hgtools
 html5lib
 httpretty
 icalendar
+importlib_metadata
 ironic
 iso8601
 isodate
@@ -86,6 +72,7 @@ jarn.viewdoc
 jdcal
 jedi
 josepy
+junit-xml
 jupyter-notebook-gist
 keystone
 khal
@@ -98,8 +85,6 @@ mod_wsgi
 more-itertools
 mypy
 natsort
-neon
-nltk
 nose-parameterized
 ntlm-auth
 numpy-stl
@@ -117,6 +102,7 @@ pyblake2
 pybtex
 pydot_ng
 pyhs100
+pynvim
 pytest-cov
 pytest-forked
 pytest-localserver
@@ -136,7 +122,6 @@ python-troveclient
 python-utils
 python-zeep
 python-zstandard
-python2-mod_wsgi
 pytorch
 pyudev
 recommonmark
@@ -144,8 +129,10 @@ repoze.lru
 repoze.who
 requests-toolbelt
 retry
+retype
 scikit-build
 segno
+semantic_version
 seqdiag
 serpent
 snitun
@@ -164,6 +151,7 @@ sphinxcontrib-websupport
 stestr
 sure
 tblib
+tempest
 tempora
 testresources
 texttable
@@ -171,8 +159,11 @@ todoist
 toml
 tox
 waitress
+webcolors
+wheel
 zVMCloudConnector
 zc.lockfile
+zipp
 zope.event
 zope.exceptions
 zope.hookable
