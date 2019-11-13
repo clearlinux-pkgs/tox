@@ -9,6 +9,7 @@ PyJWT
 PyMySQL
 PyNaCl
 PySocks
+Pygments
 SQLAlchemy
 Sphinx
 WSGIProxy2
@@ -16,7 +17,6 @@ WebOb
 WebTest
 Werkzeug
 alembic
-ansible
 apache-libcloud
 apipkg
 argon2_cffi
@@ -79,10 +79,12 @@ khal
 lazy
 lazy-object-proxy
 libarchive-c
+libvirt-python
 matplotlib
 mido
 mod_wsgi
 more-itertools
+munch
 mypy
 natsort
 nose-parameterized
@@ -101,6 +103,7 @@ pyOpenSSL
 pyblake2
 pybtex
 pydot_ng
+pyelftools
 pyhs100
 pynvim
 pytest-cov
@@ -114,6 +117,7 @@ pytest-timeout
 pytest-xdist
 python-graphviz
 python-hwinfo
+python-ldap
 python-perf
 python-swiftclient
 python-tabulate
@@ -122,12 +126,12 @@ python-troveclient
 python-utils
 python-zeep
 python-zstandard
-pytorch
 pyudev
 recommonmark
 repoze.lru
 repoze.who
 requests-toolbelt
+responses
 retry
 retype
 scikit-build
@@ -155,6 +159,7 @@ tempest
 tempora
 testresources
 texttable
+tldextract
 todoist
 toml
 tox
@@ -164,6 +169,8 @@ wheel
 zVMCloudConnector
 zc.lockfile
 zipp
+zope.deferredimport
+zope.deprecation
 zope.event
 zope.exceptions
 zope.hookable

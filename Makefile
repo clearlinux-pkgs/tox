@@ -1,5 +1,5 @@
 PKG_NAME := tox
-URL = https://files.pythonhosted.org/packages/75/b0/1531ba32159d3633bc05bbfd7a519be6d5c358dadd290c0c84da53d177c2/tox-3.14.0.tar.gz
+URL = https://files.pythonhosted.org/packages/77/de/a0cd7de91f362a59ec689808ed2993b0578642247418840ae240cfdc4c66/tox-3.14.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
