@@ -1,0 +1,39 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Patrick McCarty <patrick.mccarty@intel.com>
+Date: Mon, 2 Dec 2019 06:42:24 -0800
+Subject: [PATCH] Use latest importlib-metadata
+
+See https://github.com/tox-dev/tox/pull/1472
+
+Signed-off-by: Patrick McCarty <patrick.mccarty@intel.com>
+---
+ setup.cfg                     | 2 +-
+ src/tox.egg-info/requires.txt | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/setup.cfg b/setup.cfg
+index 153e4b5..2a2e74f 100644
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -37,7 +37,7 @@ classifiers =
+ packages = find:
+ python_requires = >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+ install_requires = 
+-	importlib-metadata >= 0.12, <1;python_version<"3.8"
++	importlib-metadata >= 1.1.0, <2;python_version<"3.8"
+ 	packaging >= 14
+ 	pluggy >= 0.12.0, <1
+ 	py >= 1.4.17, <2
+diff --git a/src/tox.egg-info/requires.txt b/src/tox.egg-info/requires.txt
+index 5a7cc24..f749e46 100644
+--- a/src/tox.egg-info/requires.txt
++++ b/src/tox.egg-info/requires.txt
+@@ -7,7 +7,7 @@ toml>=0.9.4
+ filelock<4,>=3.0.0
+ 
+ [:python_version < "3.8"]
+-importlib-metadata<1,>=0.12
++importlib-metadata<2,>=1.1.0
+ 
+ [docs]
+ sphinx<3,>=2.0.0

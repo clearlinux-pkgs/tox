@@ -1,9 +1,9 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
+importlib_metadata
 pluggy
-virtualenv
 pytest
 pytest-timeout
-tox
 setuptools_scm
 toml
+virtualenv

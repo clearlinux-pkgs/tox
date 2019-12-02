@@ -1,5 +1,6 @@
 # This file contains build requirements that get picked up but are
 # undesirable. One entry per line, no whitespace.
-virtualenv-python
+importlib-metadata
 setuptools-scm
-toml
+tox
+virtualenv-python

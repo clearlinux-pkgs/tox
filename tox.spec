@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 3.14.1
-Release  : 86
+Release  : 87
 URL      : https://files.pythonhosted.org/packages/77/de/a0cd7de91f362a59ec689808ed2993b0578642247418840ae240cfdc4c66/tox-3.14.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/77/de/a0cd7de91f362a59ec689808ed2993b0578642247418840ae240cfdc4c66/tox-3.14.1.tar.gz
 Summary  : tox is a generic virtualenv management and test command line tool
@@ -15,6 +15,7 @@ Requires: tox-license = %{version}-%{release}
 Requires: tox-python = %{version}-%{release}
 Requires: tox-python3 = %{version}-%{release}
 Requires: filelock
+Requires: importlib_metadata
 Requires: packaging
 Requires: pluggy
 Requires: py
@@ -23,6 +24,7 @@ Requires: toml
 Requires: virtualenv
 BuildRequires : buildreq-distutils3
 BuildRequires : filelock
+BuildRequires : importlib_metadata
 BuildRequires : packaging
 BuildRequires : pluggy
 BuildRequires : py
@@ -31,8 +33,8 @@ BuildRequires : pytest-timeout
 BuildRequires : setuptools_scm
 BuildRequires : six
 BuildRequires : toml
-BuildRequires : tox
 BuildRequires : virtualenv
+Patch1: 0001-Use-latest-importlib-metadata.patch
 
 %description
 [![Latest version on
@@ -85,14 +87,14 @@ python3 components for the tox package.
 %prep
 %setup -q -n tox-3.14.1
 cd %{_builddir}/tox-3.14.1
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1573673158
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1575298066
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
