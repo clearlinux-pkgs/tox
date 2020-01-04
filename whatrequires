@@ -38,12 +38,11 @@ cheroot
 click
 cloudpickle
 cmd2
-compute-image-packages
-configparser
 cotyledon
 coverage
 defusedxml
 distro
+django-nose
 django_compressor
 dnf
 dnf-plugins-core
@@ -91,7 +90,6 @@ nose-parameterized
 ntlm-auth
 numpy-stl
 os-xenapi
-oslo.upgradecheck
 packaging
 parso
 patsy
@@ -142,7 +140,6 @@ serpent
 snitun
 sortedcontainers
 soupsieve
-sphinx-feature-classification
 sphinxcontrib-applehelp
 sphinxcontrib-devhelp
 sphinxcontrib-htmlhelp
@@ -152,7 +149,6 @@ sphinxcontrib-qthelp
 sphinxcontrib-serializinghtml
 sphinxcontrib-spelling
 sphinxcontrib-websupport
-stestr
 sure
 tblib
 tempest
