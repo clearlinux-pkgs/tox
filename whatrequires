@@ -97,6 +97,7 @@ performance
 persistent
 piglit
 portend
+prompt_toolkit
 pyOpenSSL
 pyblake2
 pybtex
