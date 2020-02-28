@@ -93,6 +93,7 @@ os-xenapi
 packaging
 parso
 patsy
+pep517
 performance
 persistent
 piglit
