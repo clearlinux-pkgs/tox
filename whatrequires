@@ -106,7 +106,9 @@ pydot_ng
 pyelftools
 pyhs100
 pynvim
+pytest-cache
 pytest-cov
+pytest-flake8
 pytest-forked
 pytest-localserver
 pytest-repeat
@@ -127,6 +129,7 @@ python-utils
 python-zeep
 python-zstandard
 pyudev
+readme_renderer
 recommonmark
 repoze.lru
 repoze.who
@@ -160,6 +163,7 @@ texttable
 tldextract
 todoist
 toml
+twine
 waitress
 webcolors
 wheel

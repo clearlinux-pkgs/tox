@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 3.14.5
-Release  : 95
+Release  : 96
 URL      : https://files.pythonhosted.org/packages/5b/e1/138ed5fa49ca20fdc05ab52f260276f9d0a1b464af831b43231f9df1f185/tox-3.14.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5b/e1/138ed5fa49ca20fdc05ab52f260276f9d0a1b464af831b43231f9df1f185/tox-3.14.5.tar.gz
 Summary  : tox is a generic virtualenv management and test command line tool
@@ -79,6 +79,13 @@ Summary: python3 components for the tox package.
 Group: Default
 Requires: python3-core
 Provides: pypi(tox)
+Requires: pypi(filelock)
+Requires: pypi(packaging)
+Requires: pypi(pluggy)
+Requires: pypi(py)
+Requires: pypi(six)
+Requires: pypi(toml)
+Requires: pypi(virtualenv)
 
 %description python3
 python3 components for the tox package.
@@ -93,8 +100,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582908890
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583441596
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
