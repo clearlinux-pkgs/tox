@@ -9,7 +9,6 @@ PyJWT
 PyMySQL
 PyNaCl
 PySocks
-Pygments
 SQLAlchemy
 Sphinx
 WSGIProxy2
@@ -35,6 +34,7 @@ ceph-deploy
 certbot
 check-manifest
 cheroot
+ciso8601
 click
 cloudpickle
 cmd2
@@ -66,7 +66,10 @@ importlib_metadata
 ironic
 iso8601
 isodate
+jaraco.classes
+jaraco.collections
 jaraco.functools
+jaraco.text
 jarn.viewdoc
 jdcal
 jedi
@@ -79,7 +82,6 @@ lazy
 lazy-object-proxy
 libarchive-c
 libvirt-python
-matplotlib
 mido
 mod_wsgi
 more-itertools
@@ -90,13 +92,13 @@ nose-parameterized
 ntlm-auth
 numpy-stl
 os-xenapi
-packaging
 parso
 patsy
 pep517
 performance
 persistent
 piglit
+pkginfo
 portend
 prompt_toolkit
 pyOpenSSL
@@ -106,6 +108,7 @@ pydot_ng
 pyelftools
 pyhs100
 pynvim
+pyperf
 pytest-cache
 pytest-cov
 pytest-flake8
@@ -120,7 +123,6 @@ pytest-xdist
 python-graphviz
 python-hwinfo
 python-ldap
-python-perf
 python-swiftclient
 python-tabulate
 python-tappy
