@@ -18,6 +18,7 @@ Werkzeug
 alembic
 apache-libcloud
 apipkg
+appdirs
 argon2_cffi
 attrs
 backports.weakref
@@ -69,6 +70,7 @@ jaraco.collections
 jaraco.functools
 jaraco.text
 jarn.viewdoc
+javaproperties
 jdcal
 jedi
 josepy
@@ -77,6 +79,7 @@ junit-xml
 jupyter-notebook-gist
 keystone
 khal
+knack
 lazy
 lazy-object-proxy
 libarchive-c
@@ -123,7 +126,6 @@ python-graphviz
 python-hwinfo
 python-ldap
 python-swiftclient
-python-tabulate
 python-troveclient
 python-utils
 python-zeep
@@ -138,6 +140,7 @@ responses
 retry
 retype
 scikit-build
+scour
 segno
 semantic_version
 seqdiag
@@ -154,6 +157,7 @@ sphinxcontrib-qthelp
 sphinxcontrib-serializinghtml
 sphinxcontrib-spelling
 sphinxcontrib-websupport
+sshtunnel
 sure
 tblib
 tempest
