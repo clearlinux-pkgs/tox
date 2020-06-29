@@ -120,7 +120,6 @@ pytest-repeat
 pytest-rerunfailures
 pytest-runner
 pytest-sugar
-pytest-timeout
 pytest-xdist
 python-graphviz
 python-hwinfo
