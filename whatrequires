@@ -37,7 +37,6 @@ cheroot
 ciso8601
 click
 cloudpickle
-cmd2
 cotyledon
 coverage
 defusedxml
@@ -62,6 +61,7 @@ html5lib
 httpretty
 icalendar
 importlib_metadata
+iniconfig
 ironic
 iso8601
 isodate
@@ -103,7 +103,6 @@ persistent
 piglit
 pkginfo
 portend
-prompt_toolkit
 pyOpenSSL
 pyblake2
 pybtex
