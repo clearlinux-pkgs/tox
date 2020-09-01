@@ -19,7 +19,7 @@ alembic
 apache-libcloud
 apipkg
 appdirs
-argon2_cffi
+argon2-cffi
 attrs
 backports.weakref
 bashate
@@ -103,6 +103,7 @@ persistent
 piglit
 pkginfo
 portend
+prompt_toolkit
 pyOpenSSL
 pyblake2
 pybtex
