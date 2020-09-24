@@ -4,7 +4,7 @@
 #
 Name     : tox
 Version  : 3.20.0
-Release  : 109
+Release  : 110
 URL      : https://files.pythonhosted.org/packages/b2/2c/579c4ad3d0c050770ee3b3bf42305606107ea42abb88ec8c5ce24c055a3f/tox-3.20.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b2/2c/579c4ad3d0c050770ee3b3bf42305606107ea42abb88ec8c5ce24c055a3f/tox-3.20.0.tar.gz
 Summary  : tox is a generic virtualenv management and test command line tool
