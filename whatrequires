@@ -9,13 +9,13 @@ PyJWT
 PyMySQL
 PyNaCl
 PySocks
-Pygments
 SQLAlchemy
 Sphinx
 WSGIProxy2
 WebOb
 WebTest
 Werkzeug
+anyio
 apipkg
 appdirs
 argon2-cffi
@@ -48,12 +48,16 @@ flake8-docstrings
 fonttools
 glances
 greenlet
+h2
 h5py
+hpack
 html5lib
 httpretty
+hyperframe
 icalendar
 importlib_metadata
 iniconfig
+intelhex
 iso8601
 isodate
 jaraco.classes
@@ -78,7 +82,6 @@ more-itertools
 mypy
 nose-parameterized
 ntlm-auth
-numpy-stl
 patsy
 pep517
 persistent
@@ -100,6 +103,7 @@ pytest-rerunfailures
 pytest-runner
 pytest-sugar
 pytest-xdist
+python-dotenv
 python-graphviz
 python-hwinfo
 python-utils
@@ -136,6 +140,7 @@ texttable
 tldextract
 toml
 twine
+typeguard
 waitress
 webcolors
 wheel
