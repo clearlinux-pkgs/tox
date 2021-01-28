@@ -88,7 +88,6 @@ persistent
 piglit
 pkginfo
 portend
-prompt_toolkit
 pyOpenSSL
 pycares
 pydot_ng
