@@ -80,6 +80,7 @@ mido
 mod_wsgi
 more-itertools
 mypy
+nbclient
 nose-parameterized
 ntlm-auth
 patsy
@@ -88,6 +89,7 @@ persistent
 piglit
 pkginfo
 portend
+prompt_toolkit
 pyOpenSSL
 pycares
 pydot_ng
