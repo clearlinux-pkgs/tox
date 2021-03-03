@@ -37,6 +37,7 @@ click
 cloudpickle
 coverage
 defusedxml
+dill
 distro
 django-nose
 django_compressor
@@ -122,6 +123,7 @@ retype
 scour
 seqdiag
 serpent
+singledispatch
 sortedcontainers
 soupsieve
 sphinxcontrib-applehelp
