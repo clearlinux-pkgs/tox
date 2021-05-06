@@ -20,8 +20,10 @@ apipkg
 appdirs
 argon2-cffi
 attrs
+backports.entry_points_selectable
 backports.weakref
 bcrypt
+black
 bleach
 blockdiag
 borgbackup
@@ -38,6 +40,7 @@ cloudpickle
 coverage
 defusedxml
 dill
+diskcache
 distro
 django-nose
 django_compressor
@@ -47,6 +50,7 @@ dockerpty
 execnet
 flake8-docstrings
 fonttools
+fsspec
 glances
 greenlet
 h2
@@ -68,7 +72,6 @@ jaraco.text
 jarn.viewdoc
 javaproperties
 jdcal
-jedi
 josepy
 jsonpickle
 jupyter-notebook-gist
@@ -82,6 +85,7 @@ mod_wsgi
 more-itertools
 mypy
 nbclient
+nltk
 nose-parameterized
 ntlm-auth
 patsy
@@ -117,7 +121,6 @@ readme_renderer
 recommonmark
 repoze.lru
 requests-toolbelt
-responses
 retry
 retype
 scour
