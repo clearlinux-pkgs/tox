@@ -19,6 +19,7 @@ anyio
 apipkg
 appdirs
 argon2-cffi
+arrow
 attrs
 backports.entry_points_selectable
 backports.weakref
@@ -37,6 +38,7 @@ cheroot
 ciso8601
 click
 cloudpickle
+contextlib2
 coverage
 defusedxml
 dill
@@ -47,6 +49,7 @@ django_compressor
 dnf
 dnf-plugins-core
 dockerpty
+ecdsa
 execnet
 flake8-docstrings
 fonttools
@@ -94,6 +97,7 @@ persistent
 piglit
 pkginfo
 portend
+prettytable
 prompt_toolkit
 pyOpenSSL
 pycares
@@ -124,10 +128,10 @@ requests-toolbelt
 retry
 retype
 scour
+semantic_version
 seqdiag
 serpent
 singledispatch
-sortedcontainers
 soupsieve
 sphinxcontrib-applehelp
 sphinxcontrib-devhelp
