@@ -32,7 +32,6 @@ boto3
 cachetools
 ceph
 ceph-deploy
-certbot
 check-manifest
 cheroot
 ciso8601
@@ -96,6 +95,7 @@ pep517
 persistent
 piglit
 pkginfo
+platformdirs
 portend
 prettytable
 prompt_toolkit
