@@ -59,10 +59,10 @@ h2
 h5py
 hpack
 html5lib
-httpretty
 hyperframe
 icalendar
 importlib_metadata
+importlib_resources
 iniconfig
 intelhex
 iso8601
@@ -82,6 +82,7 @@ knack
 lazy-object-proxy
 libarchive-c
 libvirt-python
+matplotlib
 mido
 mod_wsgi
 more-itertools
