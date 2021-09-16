@@ -11,9 +11,9 @@ PyNaCl
 PySocks
 SQLAlchemy
 Sphinx
+Unidecode
 WSGIProxy2
 WebOb
-WebTest
 Werkzeug
 anyio
 apipkg
@@ -45,10 +45,9 @@ diskcache
 distro
 django-nose
 django_compressor
-dnf
-dnf-plugins-core
 dockerpty
 ecdsa
+elementpath
 execnet
 flake8-docstrings
 fonttools
@@ -79,6 +78,7 @@ jsonpickle
 jupyter-notebook-gist
 khal
 knack
+koji
 lazy-object-proxy
 libarchive-c
 libvirt-python
@@ -147,6 +147,7 @@ sure
 tblib
 tempora
 testresources
+testtools
 texttable
 tldextract
 toml
@@ -155,6 +156,7 @@ typeguard
 waitress
 webcolors
 wheel
+xmlschema
 zc.lockfile
 zipp
 zope.deferredimport
